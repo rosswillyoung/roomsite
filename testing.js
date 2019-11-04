@@ -6,3 +6,17 @@ function createWallInputs() {
     }
     return false;
 }
+
+function startCanvas() {
+    myCanvas.start();
+}
+
+var myCanvas = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 700;
+        this.canvas.height = 700;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[10]);
+    }
+}
