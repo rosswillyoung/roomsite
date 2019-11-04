@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <script type="text/javascript" src="testing.js"></script>
     <title>Hello, world!</title>
   </head>
   <body>
@@ -17,8 +17,12 @@
         <div class="form-group">
           <label for="wallNumber">Number of Walls:</label>
           <input type="number" class="form-control" id="wallNumber" placeholder="Number of walls" min="0">
+          <button type="submit" class="btn btn-primary" onclick="return createWallInputs()">Submit</button>
         </div>
       </form>
+    </div>
+    <div class="container" id="divContainer">
+
     </div>
     <div class="container-fluid">
       <h2>wow</h2>
